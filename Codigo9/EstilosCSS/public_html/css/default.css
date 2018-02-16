@@ -1,0 +1,170 @@
+/******************************
+*Esto afecta a todo el archivo*
+*******************************/
+*{
+	font-size: 20pt;
+}
+
+/****************************************************
+*Esto afecta a los contenedores del tipo html y body*
+****************************************************/
+html, body{
+}
+
+div{
+	color: orange;
+}
+
+h1, h2{
+	text-align: center;
+	color: blue;
+}
+
+/***************************************
+*Esto afecta a todas las clases parrafo*
+***************************************/
+.parrafo{
+	text-align: justify;
+}
+
+.texto-morado{
+	color: purple;
+}
+
+/****************************************
+*Esto afecta a todos los id hdrPrincipal*
+****************************************/
+#hdrPrincipal{
+	color: green;
+}
+
+/*******************************************
+*Esto afecta a los id menuNavegacion que se*
+*encuentran dentro del contenedor nav      *
+*******************************************/
+nav #menuNavegacion{
+	list-style: none;
+	display: inline-block;
+}
+
+/*******************************************
+*Esto afecta a los contenedores li que se  *
+*encuentran dentro de un contenedor con id *
+*menuNavegacion dentro de un contenedor nav*
+*******************************************/
+nav #menuNavegacion li{
+	list-style: none;
+	display: inline-block;
+}
+
+#cursos > ul{
+	border: 1px solid black
+}
+
+/*********************************************************
+*Aplica el estilo a un parrafo 'p', que se encuentra	 *
+*adyacente (seguido de) a un ul con un id listado-cursos.*
+*********************************************************/
+ul#listado-cursos + p{
+	background-color: red;
+}
+
+/***********************************************************
+*El '*' hace que se aplique a todo lo que encuentre con la *
+*siguiente informacion, por lo que no es necesario escribir*
+*el URL completo.										   *
+***********************************************************/
+a[href*="facebook.com"]{
+	color:white;
+	background-color: black;
+}
+
+img[id="logo"]{
+	margin-top: 20px;
+}
+
+[class="seccion"]{
+	color: white;
+	background-color: blue;
+}
+
+.seccion h2{
+	color: red;
+}
+
+/*********************************
+*Esto es equivalente al de abajo.*
+*********************************/
+.seccion p{
+	color: yellow;
+}
+
+/**********************************
+*Esto es equivalente al de arriba.*
+***********************************
+*								  *
+*	  [class="seccion"] p{		  *
+*	  	  color: yellow;		  *
+*	  }							  *
+*								  *
+**********************************/
+
+
+/*****************************************
+*Aplica los estilos a diferentes acciones*
+*como focus, visited, active y hover.	 *
+*****************************************/
+div.menu nav ul li a:focus,
+div.menu nav ul li a:visited,
+div.menu nav ul li a:active,
+div.contenedor nav ul li a:focus,
+div.contenedor nav ul li a:visited,
+div.contenedor nav ul li a:active
+{
+	color: black;
+}
+div.menu nav ul li a:hover,
+div.contenedor nav ul li a:hover{
+	color: orange;
+}
+
+
+/********************************************
+*Aplica los estilos a diferentes a distintas*
+*secciones de una lista.				    *
+********************************************/
+div.menu nav ul li:nth-child(2) a,
+div.contenedor nav ul li:nth-child(2) a{
+	background-color: cyan;
+}
+
+div.menu nav ul li:nth-child(3) a,
+div.contenedor nav ul li:nth-child(3) a{
+	background-color: magenta;
+}
+
+div.menu nav ul li:last-child a,
+div.menu nav ul li:first-child a,
+div.contenedor nav ul li:last-child a,
+div.contenedor nav ul li:first-child a{
+
+	text-decoration: none;
+}
+
+table thead{
+	color: cyan;
+	background-color: magenta;
+	border-width: 5px;
+	border-color: blue;
+}
+
+table tbody tr:nth-child(even){
+	color:cyan;
+	background-color: pink;
+}
+
+
+table tbody tr:nth-child(odd){
+	color: pink;
+	background-color: cyan;
+}

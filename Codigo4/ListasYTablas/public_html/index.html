@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--En este codigo se introduce a las tablas y listas en HTML-->
+<html>
+<head>
+	<title>Listas y tablas</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-with, initial-scale=1.0">
+</head>
+<body>
+
+	<!--Seccion de listas-->
+	<h1>Listas</h1>
+
+	<h2>Listas no ordenadas</h2>
+	<!--Esta es una lista no ordenada-->
+	<ul style="list-style-type: square;">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+	<br>
+	<br>
+
+	<h2>Listas orenadas</h2>
+	<!--Esta es una lista ordenada de tipo Romano Mayuscula qu empieza en 5-->
+	<ol type="I" start="5"><!--Puede ser tipo 1 (numerico, por default), i (romano minusculas), I (romano mayusculas), a (alfabetico minuscula), A (alfabetico mayuscula) y puede empezar donde uno desee.-->
+		<li>Caf&eacute;</li>
+		<li>T&eacute;</li>
+		<li>Leche</li>
+	</ol>
+
+	<h2>Listas descriptivas</h2>
+	<h3>Listas de definiciones</h3>
+	<dl><!--Esto hace una lista descriptiva-->
+		<dt><!--Esto es el titulo de una seccion de la lista-->
+			T&iacute;tulo 1
+		</dt>
+		<dd><!--Esto es el contenido de la seccion de la lista.-->
+			Definici&oacute;n 1
+			<dl>
+				<dt>
+					Subt&iacute;tulo 1.1
+				</dt>
+				<dd>
+					Descripci&oacute;n 1.1
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					Subt&iacute;tulo 1.2
+				</dt>
+				<dd>
+					Descripci&oacute;n 1.2
+				</dd>
+			</dl>
+		</dd>
+		<dt>
+			T&iacute;tulo 2
+		</dt>
+		<dd>
+			Definici&oacute;n 2
+		</dd>
+	</dl>
+
+	<!--Seccion de tablas-->
+	<h1>Tablas</h1>
+	
+	<table>
+		<caption>T&iacute;tulo de la tabla</caption><!--Titulo relacionado con el tamaño de la tabla-->
+		<!--Pone el color de la columna de la tabla en el orden en el que va-->
+		<colgroup>
+			<col style="background-color: red">
+			<col style="background-color: yellow">
+		</colgroup>
+		<thead><!--Encabezado de la tabla-->
+			<tr><!--Nuevo renglon en la tabla-->
+				<th>Fruta</th><!--Crea una columna en la tabla-->
+				<th>Precios</th>
+			</tr>
+		</thead>
+		<tr>
+			<td>Manzana</td>
+			<td>$32</td>
+		</tr>
+		<tr>
+			<td>Pl&aacute;tano</td>
+			<td>$21</td>
+		</tr>
+		<tfoot><!--Pie de la tabla-->
+			<tr><!--Crea un renglon-->
+				<th>Total</th><!--Crea una columna-->
+				<th>$55</th>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>

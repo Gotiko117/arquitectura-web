@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formularios</title>
+</head>
+<body>
+	El sistema <abbr title="Sistema para la Administracion de Aulas de Computo">ISAAC</abbr> fue desarrollado para la <abbr title="Coordinacion de Computo Academico">CCA</abbr>
+	<h1>Formularios con HTML5</h1>
+	<!--Se crea un formulario-->
+	<form action="#" autocomplete="on" method="GET"><!--novalidate-->
+		<input type="file"><br><br>
+		<input type="text" value="Solo me puedes leer" size="6" maxlength="4">
+		<h2>T&eacute;rminos y Condiciones</h2>
+		<input type="checkbox" name="chkGruposInteres" value="1">Estoy de acuerdo con los t&eacute;rminos y condiciones.<br>
+		<input type="checkbox" name="chkGruposInteres" value="2">Opci&oacute;n 2.<br><br>
+
+		<fieldset>
+			<legend>Genero</legend>
+			<label><input type="radio" name="rdoGenero">Femenino</label><br>
+			<label><input type="radio" name="rdoGenero">Masculino</label><br>
+			<label><input type="radio" name="rdoGenero">Otro</label><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Grupos de tu inter&eacute;s</legend>
+			<input type="checkbox" name="chkGruposInteres" value="1" checked>Deportes<br>
+			<input type="checkbox" name="chkGruposInteres" value="2">Entretenimiento<br>
+			<input type="checkbox" name="chkGruposInteres" value="3">Tecnolog&iacute;a<br>
+		</fieldset>
+
+		<textarea>Contenido Interno</textarea><br><br>
+		<input type="hidden" id="hdnUsuario" value="Prueba">
+		<input type="password" id="pswContrasena">Contrase&ntilde;a.<br><br>
+		<select multiple>
+			<option value="1">Opci&oacute;n 1</option>
+			<option value="2">Opci&oacute;n 2</option>
+			<option value="3">Opci&oacute;n 3</option>
+			<option value="4">Opci&oacute;n 4</option>
+		</select><br><br>
+
+		<select>
+			<option value="1">Opci&oacute;n 1</option>
+			<option value="2">Opci&oacute;n 2</option>
+			<option value="3">Opci&oacute;n 3</option>
+			<option value="4">Opci&oacute;n 4</option>
+		</select><br><br>
+
+		<label for="clrMuestra">Color: </label>
+		<input type="color" id="clrMuestra">(C&oacute;digo hexadecimal como #ADD8E6)
+		<br><br>
+
+		<!--La parte de "required" te obliga a rellenar esa seccion antes d epoder enviarla-->
+		<label for="dFecha">Fecha: </label>
+		<input type="date" id="dFecha" required>
+		<br><br>
+
+		<label for="dtFechaHora">Fecha y Hora: </label>
+		<input type="datetime-local" id="dtFechaHora">
+		<br><br>
+
+		<label for="hora">Hora: </label>
+		<input type="time" id="hora">
+		<br><br>
+
+		<label for="emCorreo">Correo Electr&oacute;nico: </label>
+		<input type="email" id="emCorreo">
+		<br><br>
+
+		<label for="mesAnio">Mes y a&ntilde;o: </label>
+		<input type="month" id="mesAnio">
+		<br><br>
+
+		<label for="week">Semana: </label>
+		<input type="week" id="week">
+		<br><br>
+
+		<label for="numeros">N&uacute;meros: </label>
+		<input type="number" id="numeros" min="0" max="100" step="10" value="30">
+		<br><br>
+
+		<label for="evaluarCurso">&iquest;Qu&eacute; tal va el curso?: </label> Va mal
+		<input type="range" id="evaluarCurso" min="1" max="10"> Va bien
+		<br><br>
+
+		<label for="paraBusquedas">Buscar: </label>
+		<input type="search" id="paraBusquedas">
+		<br><br>
+
+		<label for="telefono">Tel&eacute;fono: </label>
+		<input type="tel" id="telefono" placeholder="(###) ###-####" pattern="\(\d{3}\) \d{3}-\d{4}" required>
+		<br><br>
+
+		<label for="sitioWeb">Ingresa tu sitio web: </label>
+		<input type="url" id="sitioWeb">
+		<br><br>
+
+		<label for="txtMes">Mes de nacimiento: </label>
+		<!--Una entrada de tipo texto. Placeholder es una descripcion de lo que debes de poner en el label-->
+		<input type="text" id="txtMes" placeholder="Selecione un mes" list="dltMeses">
+		<datalist id="dltMeses">
+			<option value="Enero">
+			<option value="Febrero">
+			<option value="Marzo">
+			<option value="Abril">
+			<option value="Mayo">
+			<option value="Junio">
+			<option value="Julio">
+			<option value="Agosto">
+			<option value="Septiembre">
+			<option value="Octubre">
+			<option value="Noviembre">
+			<option value="Diciembre">
+		</datalist>
+		<br><br>
+
+		<input type="button" value="Que haga otra cosa">
+		<br><br>
+		<!--Verifica que los datos de son 'required' esten rellenados, si no no lo envia-->
+		<input type="submit">
+	</form>
+</body>
+</html>
